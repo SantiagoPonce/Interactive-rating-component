@@ -1,0 +1,118 @@
+:root{
+--Orange: hsl(25, 97%, 53%);
+--White: hsl(0, 0%, 100%);
+--Light-Grey: hsl(217, 12%, 63%);
+--Medium-Grey: hsl(214, 17%, 24%);
+--Dark-Blue: hsl(213, 19%, 18%);
+--Very-Dark-Blue: hsl(216, 12%, 8%);
+}
+
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    color: var(--White);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+
+    font-family: "Overpass", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+.rating-component,.rating-component__waiting,.rating-component__ty{
+    background-color: var(--Dark-Blue);
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    border-radius: 15px;
+    max-width: 288px;
+}
+
+
+.rating-component__star{
+    max-inline-size: 15%;
+    background-color: var(--Medium-Grey);
+    padding: .5em;
+    border-radius: 20px;
+}
+
+.rating-component__typic{
+    max-inline-size: 70%;
+    margin: 0 auto;
+}
+.rating-component__header{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.rating-component__ty-header{
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.rating-component__message{
+    font-size: .8em;
+    color: var(--Light-Grey);
+}
+.rating-component__ty-message {
+    font-size: .9em;
+    color: var(--Light-Grey);
+    text-align: center;
+}
+.rating-component__selection{
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+
+.rating-component__ty-selection{
+    color: var(--Orange);
+    text-align: center;
+    background-color: var(--Medium-Grey);
+    padding: .5em;
+    border-radius: 2em;
+}
+.rating-component__option{
+    font-size: .9em;
+    color: var(--Light-Grey);
+    background-color: var(--Medium-Grey);
+    display: flex;
+    height: 2.5em;
+    width: 2.5em;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2em;
+}
+
+.rating-component__option:hover{
+    background-color: var(--Orange);
+    color: var(--White);
+}
+.rating-component__option--selected{
+    background-color: var(--Light-Grey);
+    color: var(--White);
+}
+.rating-component__button{
+    background-color: var(--Orange);
+    text-align: center;
+    padding: .5em;
+    border-radius: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.hidden{
+    display: none;
+}
+
+.attribution{
+    text-align: center;
+}
+
+.attribution__name{
+    color: var(--Orange);
+}
